@@ -576,6 +576,23 @@ body { background: var(--paper); color: var(--ink); }
   .contact-hero h1 { font-size: clamp(2.8rem, 12vw, 4rem); }
   .enquiry-form { padding: 24px 18px !important; }
 }
+.enquiry-form .field-error {
+  display: block;
+  color: #b54747;
+  font: 500 .78rem/1.45 'DM Sans', sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.enquiry-form .has-error input,
+.enquiry-form .has-error select,
+.enquiry-form .has-error textarea {
+  border-color: #c96a6a !important;
+}
+.enquiry-form .has-error input:focus,
+.enquiry-form .has-error select:focus,
+.enquiry-form .has-error textarea:focus {
+  box-shadow: 0 0 0 3px rgba(181, 71, 71, .12) !important;
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
